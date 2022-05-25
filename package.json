@@ -1,0 +1,25 @@
+{
+  "name": "mongodbcli",
+  "version": "1.0.0",
+  "description": "In terminal type comands\r ####\r 1.npm init -y  (can be used to set up a new or existing npm package.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stalius4/mongoDBCLI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stalius4/mongoDBCLI/issues"
+  },
+  "homepage": "https://github.com/Stalius4/mongoDBCLI#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "mongodb": "^4.6.0",
+    "yargs": "^17.5.1"
+  }
+}
