@@ -1,6 +1,6 @@
 
 
-# In terminal type comands
+#  type comands in terminal
 
 1. npm init -y  ***(can be used to set up a new or existing npm package.)*** (https://docs.npmjs.com/cli/v8/commands/npm-init)
 2. npm  i yargs     (https://www.npmjs.com/package/yargs)
@@ -15,7 +15,9 @@
 10. create new file in same directory as .gitignore  ***.env***  add .env to .gitignore file 
 11. npm i dotenv ***(this package let us to access .env file )***
 
+# CRUD   (create, read, update and delete)
 
+1. Create insertOne()   [example](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/#std-label-node-usage-insert)
 
 
 
@@ -25,8 +27,7 @@
 1. connect()     (https://www.tabnine.com/code/javascript/functions/mongodb/MongoClient/connect)
 2. db()          (https://www.tabnine.com/code/javascript/functions/mongodb/MongoClient/db)
 3. collection()  (https://www.tabnine.com/code/javascript/functions/mongodb/Db/collection)
-3. insertOne()   (https://www.mongodb.com/docs/manual/reference/method/db.collection.insertOne/)
-
+4. close()       (https://developer.mozilla.org/en-US/docs/Web/API/Window/close)
 
 
 
