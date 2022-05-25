@@ -1,6 +1,11 @@
+# App to work
 
+1. node src/app.js --add --title "name" **add item to database**
+2. node src/app.js --list **display collection in to terminal**
+3. node src/app.js --updateYear "year" --title "name"  **update movie with year**
+3. node src/app.js --delete  --title "name" **delete object in database**
 
-#  Type comands in terminal
+##  Type comands in terminal
 
 1. npm init -y  ***(can be used to set up a new or existing npm package.)*** (https://docs.npmjs.com/cli/v8/commands/npm-init)
 2. npm  i yargs     (https://www.npmjs.com/package/yargs)
@@ -17,8 +22,10 @@
 
 # CRUD   (create, read, update and delete)
 
-1. ***Create*** insertOne( )   [documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/#std-label-node-usage-insert)
-2. ***Read*** collection.find( ) [documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/find/)
+1. ***Create*** insertOne( )     [Documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/#std-label-node-usage-insert)
+2. ***Read*** collection.find( ) [Documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/find/)
+3. ***Update*** updateOne( )     [Documentation] (https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/)
+4. **Delete*** deleteOne( )      [Documentation] (https://www.mongodb.com/docs/drivers/node/current/usage-examples/deleteOne/)
 
 
 
