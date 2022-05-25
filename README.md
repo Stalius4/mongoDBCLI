@@ -24,8 +24,8 @@
 
 1. ***Create*** insertOne( )     [Documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/#std-label-node-usage-insert)
 2. ***Read*** collection.find( ) [Documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/find/)
-3. ***Update*** updateOne( )     [Documentation] (https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/)
-4. **Delete*** deleteOne( )      [Documentation] (https://www.mongodb.com/docs/drivers/node/current/usage-examples/deleteOne/)
+3. ***Update*** updateOne( )     [Documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/)
+4. **Delete*** deleteOne( )      [Documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/deleteOne/)
 
 
 
