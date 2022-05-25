@@ -1,6 +1,8 @@
 const yargs = require("yargs");
 const { client, connection } = require("./db/connection");
-const {addMovie, listMovies} = require("./utils/index")
+const {addMovie, listMovies, updateMovies, deleteMovies} = require("./utils/index")
+
+
 const app = async (yargsObj) => {
     const collection = await connection() // access connection function from connection.js
     try {
@@ -10,10 +12,16 @@ const app = async (yargsObj) => {
         } else if(yargsObj.list){
             // list movies from mangodb on terminal
             await listMovies(collection)
-        } else{
-            console.log("incorrect command")
-            client.close()  
-        }
+            client.close() 
+        } else if(yargsObj.updateYear){
+            await updateMovies( {title: yargsObj.title}, collection, yargsObj)
+            client.close() 
+        } else if(yargsObj.delete){
+            await deleteMovies( {title: yargsObj.title}, collection, yargsObj)
+            client.close() 
+        }else {     console.log("incorrect command")
+        client.close() 
+    }
     } catch (error) {
         console.log(error)
         client.close()  

@@ -1,6 +1,6 @@
 
 
-#  type comands in terminal
+#  Type comands in terminal
 
 1. npm init -y  ***(can be used to set up a new or existing npm package.)*** (https://docs.npmjs.com/cli/v8/commands/npm-init)
 2. npm  i yargs     (https://www.npmjs.com/package/yargs)
@@ -17,17 +17,17 @@
 
 # CRUD   (create, read, update and delete)
 
-1. Create insertOne()   [example](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/#std-label-node-usage-insert)
-
+1. ***Create*** insertOne( )   [documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/#std-label-node-usage-insert)
+2. ***Read*** collection.find( ) [documentation](https://www.mongodb.com/docs/drivers/node/current/usage-examples/find/)
 
 
 
 # New functions
 
-1. connect()     (https://www.tabnine.com/code/javascript/functions/mongodb/MongoClient/connect)
-2. db()          (https://www.tabnine.com/code/javascript/functions/mongodb/MongoClient/db)
-3. collection()  (https://www.tabnine.com/code/javascript/functions/mongodb/Db/collection)
-4. close()       (https://developer.mozilla.org/en-US/docs/Web/API/Window/close)
+1. connect( )     (https://www.tabnine.com/code/javascript/functions/mongodb/MongoClient/connect)
+2. db( )          (https://www.tabnine.com/code/javascript/functions/mongodb/MongoClient/db)
+3. collection( )  (https://www.tabnine.com/code/javascript/functions/mongodb/Db/collection)
+4. close( )       (https://developer.mozilla.org/en-US/docs/Web/API/Window/close)
 
 
 
@@ -46,3 +46,12 @@
 3. ***async***  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
 4. ***try catch*** (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+5. ***Promises and Callbacks*** [documentation](https://www.mongodb.com/docs/drivers/node/current/fundamentals/promises/)
+
+
+
+
+### Things to ask 
+
+1. upsert
