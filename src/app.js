@@ -1,6 +1,6 @@
 const yargs = require("yargs");
 const { client, connection } = require("./db/connection");
-const {addMovie, listMovies, updateMovies, deleteMovies} = require("./utils/index")
+const {addMovie, listMovies, updateMovies, deleteMovies, findMovie} = require("./utils/index")
 
 
 const app = async (yargsObj) => {
@@ -13,9 +13,15 @@ const app = async (yargsObj) => {
             // list movies from mangodb on terminal
             await listMovies(collection)
             client.close() 
-        } else if(yargsObj.updateYear){
+        } else if(yargsObj.update && yargsObj.year){
             await updateMovies( {title: yargsObj.title}, collection, yargsObj)
             client.close() 
+        } else if(yargsObj.update && yargsObj.genre){
+            await updateMovies( {title: yargsObj.title}, collection, yargsObj)
+            client.close() 
+        } else if(yargsObj.find && yargsObj.genre){
+            await findMovie({genre: yargsObj.genre}, collection, yargsObj)
+            client.close()
         } else if(yargsObj.delete){
             await deleteMovies( {title: yargsObj.title}, collection, yargsObj)
             client.close() 

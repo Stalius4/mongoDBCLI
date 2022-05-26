@@ -2,9 +2,10 @@
 
 1. node src/app.js --add --title "name" **add item to database**
 2. node src/app.js --list **display collection in to terminal**
-3. node src/app.js --updateYear "year" --title "name"  **update movie with year**
-3. node src/app.js --delete  --title "name" **delete object in database**
-
+3. node src/app.js --update  --year "year" --title "name"  **update movie with year**
+4. node src/app.js --update  --genre "genre" --title "name"
+5. node src/app.js --delete  --title "name" **delete object in database**
+6. node src/app.js --find --genre "Fantasy"/ "Comedy" / "Drama" **find object by genre**
 ##  Type comands in terminal
 
 1. npm init -y  ***(can be used to set up a new or existing npm package.)*** (https://docs.npmjs.com/cli/v8/commands/npm-init)

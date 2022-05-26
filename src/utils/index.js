@@ -17,17 +17,27 @@ exports.listMovies = async (collection) => {
 }
 
 exports.updateMovies = async ( movieObj, collection, yargsObj) => {
-    const updateDoc = {// create a document that sets the plot of the movie
+    const updateYear = {// create a document that sets the plot of the movie
         $set: {
-          year: yargsObj.updateYear
+          year: yargsObj.year
+        },
+      };
+      const updateGenre = {// create a document that sets the plot of the movie
+        $set: {
+          genre: yargsObj.genre
         },
       };
     const options = { upsert: true };
-    const movies = await collection.updateOne({title:movieObj.title},updateDoc, options)
-    if(movies.acknowledged= true){
-        console.log(" year updated")
+    if(yargsObj.year){
+    const moviesYear = await collection.updateOne({title:movieObj.title},updateYear, options)
+        if(moviesYear.acknowledged= true){
+             console.log(" year updated")
     }
- 
+    }else if(yargsObj.genre){
+        const moviesGenre = await collection.updateOne({title:movieObj.title},updateGenre, options)
+            if(moviesGenre.acknowledged= true){
+                 console.log(" genre updated")
+            }
 }
 
 exports.deleteMovies = async (yargsObj, collection) =>{
@@ -39,4 +49,12 @@ exports.deleteMovies = async (yargsObj, collection) =>{
     console.log("No documents matched the query. Deleted 0 documents.");
   }
 console.log(result)
-}
+}}
+
+exports.findMovie = async (yargsObj, collection) => {
+    const query = { genre:yargsObj.genre };
+
+    const result =  await collection.find(query).toArray()
+   console.log(result)
+      }
+
