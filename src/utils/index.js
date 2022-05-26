@@ -31,12 +31,12 @@ exports.updateMovies = async ( movieObj, collection, yargsObj) => {
     if(yargsObj.year){
     const moviesYear = await collection.updateOne({title:movieObj.title},updateYear, options)
         if(moviesYear.acknowledged= true){
-             console.log(" year updated")
+             console.log(" Year updated.")
     }
     }else if(yargsObj.genre){
         const moviesGenre = await collection.updateOne({title:movieObj.title},updateGenre, options)
             if(moviesGenre.acknowledged= true){
-                 console.log(" genre updated")
+                 console.log(" Genre updated.")
             }
 }
 
@@ -52,9 +52,14 @@ console.log(result)
 }}
 
 exports.findMovie = async (yargsObj, collection) => {
-    const query = { genre:yargsObj.genre };
+    const genre = { genre:yargsObj.genre };
+    const title = { title:yargsObj.title };
+    if(yargsObj.genre){    const result =  await collection.find(genre).toArray()
+        console.log(result)
+    }else if (yargsObj.title){const result =  await collection.findOne(title)
+        console.log(result)
 
-    const result =  await collection.find(query).toArray()
-   console.log(result)
+    }
+
       }
 

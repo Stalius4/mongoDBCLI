@@ -22,6 +22,9 @@ const app = async (yargsObj) => {
         } else if(yargsObj.find && yargsObj.genre){
             await findMovie({genre: yargsObj.genre}, collection, yargsObj)
             client.close()
+        } else if(yargsObj.find && yargsObj.title){
+            await findMovie({genre: yargsObj.title}, collection, yargsObj)
+            client.close()
         } else if(yargsObj.delete){
             await deleteMovies( {title: yargsObj.title}, collection, yargsObj)
             client.close() 
